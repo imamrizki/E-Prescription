@@ -7,7 +7,7 @@
     </li>
     <li class="nav-item @yield('signa_policy_active')">
         <a class="nav-link" href="{{ route('signa_policy') }}">
-            <i class="fa fa-list-alt text-danger"></i> Signa Policy
+            <i class="fa fa-list-alt text-primary"></i> Signa Policy
         </a>
     </li>
 </ul>
@@ -16,6 +16,14 @@
     <li class="nav-item @yield('prescription_active')">
         <a class="nav-link" href="{{ route('prescriptions') }}">
             <i class="ni ni-tv-2 text-info"></i> Prescriptions
+        </a>
+    </li>
+</ul>
+<hr class="my-3">
+<ul class="navbar-nav mb-md-3">
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('/log-viewer') }}" target="_blank">
+            <i class="fa fa-history text-danger"></i> Log Viewer
         </a>
     </li>
 </ul>
