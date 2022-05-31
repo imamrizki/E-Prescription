@@ -16,11 +16,18 @@ use Illuminate\Support\Facades\Crypt;
 
 class PrescriptionController extends Controller
 {
+
+    public function test()
+    {
+        return $this->coba;
+    }
+
     public function index()
     {
-        $resep = Resep::where('is_active', 1)->orderBy("resep_kode", "desc")->paginate(25);
+        dd($this->coba);
+        // $resep = Resep::where('is_active', 1)->orderBy("resep_kode", "desc")->paginate(25);
 
-        return view('pages.transactions.prescription', compact('resep'));
+        // return view('pages.transactions.prescription', compact('resep'));
     }
 
     public function submitResep(Request $request)
